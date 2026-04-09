@@ -58,3 +58,52 @@ if __name__ == "__main__":
     print("-"*100)
     ########################
 
+   if __name__=="__main__":
+    for i in range (1,5+1):
+        for j in range(1,6-i+1,1):
+            print("*",end=" ")
+        print()
+
+    print("__"*100)
+    for i in range(1, 5 + 1):
+        for j in range(5,i-1,-1):
+            print(j, end=" ")
+        print()
+
+    print("__"*100)
+
+    for i in range(1, 5 + 1):
+        for j in range(i,1-1,-1):
+            print(j, end=" ")
+        print()
+
+    print("__" * 100)
+
+    row=6
+    for i in range (1,row+1):
+        for j in range(1,row+1-i,1):
+            print("*",end=" ")
+        print()
+
+    print("__" * 100)
+
+    for i in range(1,row+1):
+        for j in range(1,i+1,1):
+            print("*",end=" ")
+
+        print()
+
+    print("__" * 100)
+
+    for i in range(1,row+1):
+        for j in range (5,i-1,-1):
+            print(j,end=" ")
+        print()
+
+    print("__" * 100)
+
+    for i in range(1,row+1):
+        for j in range(1,row-i+1,1):
+            print(j,end=" ")
+        print()
+
