@@ -421,6 +421,76 @@ if __name__ == "__main__":
         for j in range(r + 2 - i, r + 1):
             print(chr(j+64), end=" ")
         print()
+############################################
+k=1
+    rows=5
+    for i in range(1,rows+1):
+        for j in range(1,i+1):
+            print(k,end=" 
+            ")
+            k+=1
+
+        print()
+
+
+    rows=5
+    for i in range(1,rows+1):
+        k=rows
+        for j in range(1,i+1):
+            print(k,end=" ")
+            k-=1
+        print()
+
+    rows = 5
+    for i in range(1, rows + 1):
+        k = rows
+        for j in range(1, i + 1):
+            print(k, end=" ")
+            k += 1
+        print()
+
+    rows = 5
+    for i in range(1, rows + 1):
+        k = 1
+        for j in range(1, i + 1):
+            print(k, end=" ")
+            k += 1
+        print()
+
+    rows = 5
+    for i in range(1, rows + 1):
+        k = i
+        for j in range(1, i + 1):
+            print(k, end=" ")
+            k += 1
+        print()
+
+    rows = 5
+    for i in range(1, rows + 1):
+        k = rows+1-i
+        for j in range(1, i + 1):
+            print(k, end=" ")
+            k += 1
+        print()
+
+    rows = 5
+    for i in range(1, rows + 1):
+        k = i
+        for j in range(1, i + 1):
+            print(k, end=" ")
+            k -= 1
+        print()
+
+    rows=5
+    k=1
+    for i in range(1,rows+1):
+        for j in range(1,i+1):
+            if k%2==0:
+                print(0,end=" ")
+            else:
+                print(1,end=" ")
+            k+=1
+        print()
 
 
 
