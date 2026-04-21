@@ -37,6 +37,22 @@ if __name__=="__main__":
     n=12
     factor(n)
 
+#########################
+# write a pgm to print prime numbers from 1,10000
+def prime_number(num):
+    count=0
+    for i in range(1,num+1):
+        if num%i==0:
+            count+=1
+    return count
+
+if __name__=="__main__":
+    for k in range(1,10000):
+        num=k
+        prime=prime_number(num)
+        if prime==2:
+            print(num)
+
 
 
 
