@@ -432,7 +432,7 @@ k=1
 
         print()
 
-
+########################################
     rows=5
     for i in range(1,rows+1):
         k=rows
@@ -440,7 +440,7 @@ k=1
             print(k,end=" ")
             k-=1
         print()
-
+#######################################
     rows = 5
     for i in range(1, rows + 1):
         k = rows
@@ -448,6 +448,7 @@ k=1
             print(k, end=" ")
             k += 1
         print()
+#######################################
 
     rows = 5
     for i in range(1, rows + 1):
@@ -456,7 +457,7 @@ k=1
             print(k, end=" ")
             k += 1
         print()
-
+#####################################
     rows = 5
     for i in range(1, rows + 1):
         k = i
@@ -464,7 +465,7 @@ k=1
             print(k, end=" ")
             k += 1
         print()
-
+#####################################3
     rows = 5
     for i in range(1, rows + 1):
         k = rows+1-i
@@ -472,7 +473,7 @@ k=1
             print(k, end=" ")
             k += 1
         print()
-
+#######################################
     rows = 5
     for i in range(1, rows + 1):
         k = i
@@ -480,7 +481,7 @@ k=1
             print(k, end=" ")
             k -= 1
         print()
-
+############################################
     rows=5
     k=1
     for i in range(1,rows+1):
