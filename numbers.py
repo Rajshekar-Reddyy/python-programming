@@ -69,6 +69,21 @@ if __name__ == "__main__":
         print("perfect number")
     else:
         print("not perfect number")
+###########################################
+# pgm to reverse a number without using inbuilt method
+def reverse(num):
+    res = 0
+    while num != 0:
+        rem = num % 10
+        res = (res * 10) + rem
+        num = num // 10
+    return res
+
+
+if __name__ == "__main__":
+    num=532
+    res=reverse(num)
+    print(res)
 
 
 
