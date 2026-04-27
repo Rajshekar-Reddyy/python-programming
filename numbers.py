@@ -52,6 +52,23 @@ if __name__=="__main__":
         prime=prime_number(num)
         if prime==2:
             print(num)
+##################################
+# write a pgm to check wheather the given number is perfect or not
+
+def sum_count(num):
+    sum=0
+    for i in range(1,num):
+        if num%i==0:
+            sum+=1
+    return sum
+
+if __name__ == "__main__":
+    num=5
+    sum=sum_count(num)
+    if num==sum:
+        print("perfect number")
+    else:
+        print("not perfect number")
 
 
 
