@@ -84,6 +84,72 @@ if __name__ == "__main__":
     num=532
     res=reverse(num)
     print(res)
+#######################################################
+# write a pgm to check wheather a number is a plandrome or not
+def reverse(num):
+    res = 0
+    while num != 0:
+        rem = num % 10
+        res = (res * 10) + rem
+        num = num // 10
+    return res
+
+
+if __name__ == "__main__":
+    num=12321
+    res=reverse(num)
+    if res ==num:
+        print("palindrom")
+    else:
+        print("not palindrom")
+
+###################################################
+# write a pgm to print a plandrome number from 1 to 10000
+def reverse(num):
+    res = 0
+    while num != 0:
+        rem = num % 10
+        res = (res * 10) + rem
+        num = num // 10
+    return res
+
+
+if __name__ == "__main__":
+    for k in range(1,10000):
+        num=k
+        res=reverse(num)
+        if res ==num:
+            print(num)
+
+###################################################
+# write a pgm to print a plandrome number from 1 to 10000
+def reverse(num):
+    count=0
+    res = 0
+    while num != 0:
+        rem = num % 10
+        res = (res * 10) + rem
+        num = num // 10
+    return res
+
+
+if __name__ == "__main__":
+    sum=0
+    count=0
+    k=1
+    while(True):
+        num=k
+        res=reverse(num)
+        if res ==num:
+            print(num)
+            sum+=num
+            count+=1
+        if count == 50:
+            print("the avg is")
+            print(sum / 50)
+            break
+
+        k+=1
 
 
 
