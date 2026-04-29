@@ -150,6 +150,21 @@ if __name__ == "__main__":
             break
 
         k+=1
+#########################################################3
+
+# count the digits of given number
+def count_digits(num):
+    digit=0
+    while num !=0:
+        num=num//10
+        digit+=1
+    return digit
+
+if __name__=="__main__":
+    num=1254
+    result=count_digits(num)
+    print(result)
+
 
 
 
