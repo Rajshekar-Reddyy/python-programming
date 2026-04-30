@@ -166,6 +166,32 @@ if __name__=="__main__":
     print(result)
 
 
+# check weather the given number is amstrong or not
+def count_digits(num):
+    digit=0
+    while num !=0:
+        num=num//10
+        digit+=1
+    return digit
+
+def amstrong(num):
+    res=0
+    digit=count_digits(num)
+    while num !=0:
+        rem=num%10
+        res=res+pow(rem,digit)
+        num=num//10
+    return res
+
+if __name__=="__main__":
+    num=153
+    result=amstrong(num)
+    if num==result:
+        print("amstrong number")
+    else:
+        print("not an amstrong number")
+
+
 
 
 
