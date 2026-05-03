@@ -241,6 +241,33 @@ if __name__=="__main__":
         if num==result:
             print(num)
 
+##############################################
+#pgm to find desirum numbers
+def count_digits(num):
+    digit=0
+    while num !=0:
+        num=num // 10
+        digit+=1
+    return digit
+
+def desirum(num):
+    res=0
+    digit=count_digits(num)
+    while num!=0:
+        rem = num % 10
+        res = res+pow(rem,digit)
+        num = num//10
+        digit-=1
+    return res
+
+if __name__=="__main__":
+    num=89
+    result=desirum(num)
+    if num==result:
+        print("disarum number")
+    else:
+        print("not a disarum number")
+
 
 
 
