@@ -268,6 +268,32 @@ if __name__=="__main__":
     else:
         print("not a disarum number")
 
+############################################
+# print all the desarium numbers from 1 to 10000
+def count_digits(num):
+    digit=0
+    while num !=0:
+        num=num//10
+        digit+=1
+    return digit
+
+def disarium(num):
+    res=0
+    digit=count_digits(num)
+    while num !=0:
+        rem=num%10
+        res=res+pow(rem,digit)
+        num=num//10
+        digit-=1
+    return res
+
+if __name__=="__main__":
+    for k in range(1,10000):
+        num=k
+        result=disarium(num)
+        if num==result:
+            print(num)
+
 
 
 
