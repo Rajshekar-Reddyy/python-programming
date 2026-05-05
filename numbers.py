@@ -294,6 +294,27 @@ if __name__=="__main__":
         if num==result:
             print(num)
 
+############################################
+#pgm to print neon number
+def neon(num):
+    while num !=0:
+        res=0
+        sqr=num**2
+        while sqr !=0:
+            rem=sqr%10
+            res=res+rem
+            sqr=sqr//10
+        num=num//10
+    return res
+
+if __name__=="__main__":
+    num=9
+    result=neon(num)
+    if num==result:
+        print("neon number")
+    else:
+        print("not a neon number")
+
 
 
 
