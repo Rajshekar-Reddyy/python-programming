@@ -315,6 +315,26 @@ if __name__=="__main__":
     else:
         print("not a neon number")
 
+# ############################################
+#pgm to print 100 neon numbers
+def neon(num):
+    while num !=0:
+        res=0
+        sqr=num**2
+        while sqr !=0:
+            rem=sqr%10
+            res=res+rem
+            sqr=sqr//10
+        num=num//10
+    return res
+
+if __name__=="__main__":
+    for k in range(1,100):
+        num=k
+        result=neon(num)
+        if num==result:
+            print(num)
+
 
 
 
