@@ -335,6 +335,26 @@ if __name__=="__main__":
         if num==result:
             print(num)
 
+#############################################
+# #pgm to print happy number or not
+def happy(num):
+    sum = 0
+    while num !=0:
+        rem=num%10
+        sum=sum+(rem*rem)
+        num=num//10
+
+    return sum
+
+if __name__=="__main__":
+    num=7
+    while(num!=4 and num !=1):
+        num=happy(num)
+    if num==1:
+        print("happy number")
+    else:
+        print("not a happy number")
+
 
 
 
