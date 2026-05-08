@@ -355,6 +355,20 @@ if __name__=="__main__":
     else:
         print("not a happy number")
 
+# add digits until last is single digit number
+def add_digit(num):
+    res=0
+    while num!=0:
+        rem=num%10
+        res=res+rem
+        num=num//10
+    return res
+if __name__=='main_':
+    num=9875
+    while num>=10:
+        num=add_digit(num)
+    print(num)
+
 
 
 
