@@ -1,4 +1,4 @@
-#########       NUMBERS          ###########33333
+#########       NUMBERS          ###########
 
 if __name__=="__main__":
     n=int(input("enter a no"))    #pgm to write odd and even numbers side by side
@@ -368,7 +368,22 @@ if __name__=='main_':
     while num>=10:
         num=add_digit(num)
     print(num)
-
+    
+# check wheather a number is automorphic or not
+def is_num(num):
+    res=0
+    while num!=0:
+        rem=num%10
+        res=res+rem
+        num=num//10
+    return res
+if __name__=='main_':
+    num=25
+    square=num*num
+    if(num==square%10**len(str(num))):
+        print("automorphic")
+    else:
+        print("not automorphic")
 
 
 
