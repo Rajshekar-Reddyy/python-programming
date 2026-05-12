@@ -7,3 +7,11 @@ for x in arr:
 print(minimum)
 
 ######################################
+
+#pgm to print max number in an array
+arr = [12,13,14,8,15,78,5]
+maximum= arr[0]
+for x in arr:
+    if x>maximum:
+        maximum=x
+print(maximum)
