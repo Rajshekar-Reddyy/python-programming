@@ -15,3 +15,17 @@ for x in arr:
     if x>maximum:
         maximum=x
 print(maximum)
+
+##########################################################
+"""
+array traversal
+"""
+if __name__=='__main__':
+    arr=[10,20,30,40]
+    #with using indexing
+    for i in range(0,len(arr)):
+        print(arr[i])
+    print("-----------------------------------------------")
+    #without using indexing
+    for j in arr:
+        print(j)
