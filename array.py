@@ -29,3 +29,17 @@ if __name__=='__main__':
     #without using indexing
     for j in arr:
         print(j)
+
+############################################################
+# linear search
+def lsearch(arr,key):
+    for i in range(0,len(arr)):
+        if(arr[i]==key):
+            return i
+    return -1
+
+if __name__=="__main__":
+    arr=[10,20,30,40,50,60]
+    key=40
+    index=lsearch(arr,key)
+    print(index)
