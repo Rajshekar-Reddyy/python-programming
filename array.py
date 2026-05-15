@@ -43,3 +43,24 @@ if __name__=="__main__":
     key=40
     index=lsearch(arr,key)
     print(index)
+
+################################################################
+# binary search
+def b_search(arr,key):
+    low=0
+    high=len(arr)-1
+    while low<=high:
+        mid=(low+high)//2
+        if arr[mid]==key:
+            return mid
+        elif key > arr[mid]:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+
+if __name__=="__main__":
+    arr=[2,4,6,8,10,12,14,16,17,26,30]
+    key=16
+    index=b_search(arr,key)
+    print(index)
