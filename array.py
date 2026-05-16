@@ -64,3 +64,16 @@ if __name__=="__main__":
     key=16
     index=b_search(arr,key)
     print(index)
+
+#################################################################### 
+#reverse an array
+def reverse_arr(arr):
+    res=[]
+    for i in range(len(arr)-1,-1,-1):
+        res.append(arr[i])
+    return res
+
+if __name__=="__main__":
+    arr=[2,4,6,8,10,12,24]
+    res=reverse_arr(arr)
+    print(res)
