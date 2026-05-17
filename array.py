@@ -60,7 +60,7 @@ def b_search(arr,key):
     return -1
 
 if __name__=="__main__":
-    arr=[2,4,6,8,10,12,14,16,17,26,30]
+    arr=[2,4,8,12,14,16,18,19,20,22,24]
     key=16
     index=b_search(arr,key)
     print(index)
