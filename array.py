@@ -77,3 +77,19 @@ if __name__=="__main__":
     arr=[2,4,6,8,10,12,24]
     res=reverse_arr(arr)
     print(res)
+
+#######################################################################
+# reverse an array using binary search
+def rev_arr(arr):
+    low=0
+    high=len(arr)-1
+    while low<high:
+        arr[low],arr[high]=arr[high],arr[low]
+        low+=1
+        high-=1
+    return arr
+
+if __name__=="__main__":
+    arr=[2,4,6,8,10,12,24]
+    res = rev_arr(arr)
+    print(res)
