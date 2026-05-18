@@ -93,3 +93,13 @@ if __name__=="__main__":
     arr=[2,4,6,8,10,12,24]
     res = rev_arr(arr)
     print(res)
+
+############################################################################3
+#write a pgm to move the maximum element at the end of the array/list
+print("write a pgm to move the maximum element at the end of the array/list")
+if __name__=="__main__":
+    arr=[20,87,97,24,45,26,60]
+    for i in range (0,len(arr)-1):
+        if arr[i]>arr[i+1]:
+            arr[i],arr[i+1]=arr[i+1],arr[i]
+    print(arr)
