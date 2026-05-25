@@ -103,3 +103,13 @@ if __name__=="__main__":
         if arr[i]>arr[i+1]:
             arr[i],arr[i+1]=arr[i+1],arr[i]
     print(arr)
+
+#########################################################
+#bubble sort algorithm
+if __name__=="__main__":
+    arr=[20,87,97,24,45,26,60]
+    for k in range(0,len(arr)):
+        for i in range(0, len(arr) - 1):
+            if arr[i] > arr[i + 1]:
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+    print(arr)
