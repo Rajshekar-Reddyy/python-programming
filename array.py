@@ -113,3 +113,12 @@ if __name__=="__main__":
             if arr[i] > arr[i + 1]:
                 arr[i], arr[i + 1] = arr[i + 1], arr[i]
     print(arr)
+
+######################################################
+# reverse an array in anti clock wise direction
+arr=[10,20,30,40,50]
+temp=arr[0]
+for i in range(1,len(arr)):
+    arr[i-1]=arr[i]
+arr[-1]=temp
+print(arr)
