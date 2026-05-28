@@ -114,7 +114,7 @@ if __name__=="__main__":
                 arr[i], arr[i + 1] = arr[i + 1], arr[i]
     print(arr)
 
-######################################################
+######################################################################
 # reverse an array in anti clock wise direction
 arr=[10,20,30,40,50]
 temp=arr[0]
@@ -122,3 +122,16 @@ for i in range(1,len(arr)):
     arr[i-1]=arr[i]
 arr[-1]=temp
 print(arr)
+##########################################################################
+# reverse an array in anti clock wise direction for 4 times
+def anti(arr):
+    temp = arr[0]
+    for i in range(1, len(arr)):
+        arr[i - 1] = arr[i]
+    arr[-1] = temp
+
+if __name__=="__main__":
+    arr=[10,20,30,40,50]
+    for i in range(4):
+        anti(arr)
+    print(arr)
