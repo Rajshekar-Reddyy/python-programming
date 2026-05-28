@@ -21,7 +21,7 @@ if __name__=="__main__":
     for i in range(1, n + 1,2):
         print(i,i+1)
 
-######################
+################################################
 # WRITE A PGM TO WRITE YHE FACTORS OF A NUMBER
     n=int(input("enter a no to find factors"))
     for i in range(1,n+1):
