@@ -6,7 +6,7 @@ for x in arr:
         minimum=x
 print(minimum)
 
-######################################
+########################################################
 
 #pgm to print max number in an array
 arr = [12,13,14,8,15,78,5]
