@@ -146,4 +146,11 @@ print(arr)
 
 #or
 
+arr=[10,20,30,40,50]                                     ####o/p==[50, 10, 20, 30, 40]
+temp=arr[-1]
+for i in range(len(arr)-2,-1,-1):
+    arr[i+1]=arr[i]
+arr[0]=temp
+print(arr)
+
 
