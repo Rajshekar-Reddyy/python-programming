@@ -135,3 +135,15 @@ if __name__=="__main__":
     for i in range(4):
         anti(arr)
     print(arr)
+###########################################################################
+# rotate an array in clock wise direction
+arr=[10,20,30,40,50]                                     ####o/p==[50, 10, 20, 30, 40]
+temp=arr[-1]
+for i in range(len(arr)-1,0,-1):
+    arr[i]=arr[i-1]
+arr[0]=temp
+print(arr)
+
+#or
+
+
