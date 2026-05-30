@@ -153,4 +153,20 @@ for i in range(len(arr)-2,-1,-1):
 arr[0]=temp
 print(arr)
 
+####################################################################
+# compare 2 arrays without using == operator
+
+def equals(arr,brr):
+    if len(arr)!=len(brr):
+        return False
+    else:
+        for i in range(0,len(arr)):
+            if arr[i]!=brr[i]:
+                return False
+        return True
+if __name__=="__main__":
+    arr=[1,2,3,4,5]
+    brr=[1,2,3,4,5]
+    
+
 
