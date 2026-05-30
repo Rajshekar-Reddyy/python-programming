@@ -167,6 +167,8 @@ def equals(arr,brr):
 if __name__=="__main__":
     arr=[1,2,3,4,5]
     brr=[1,2,3,4,5]
+    result=equals(arr,brr)
+    print(result)
     
 
 
