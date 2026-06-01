@@ -180,7 +180,7 @@ def ass(arr):
     return True
 
 if __name__=="__main__":
-    arr=[1,2,3,4,5]
+    arr=[1,2,3,4,5]          # or arr=[2,3,1,3,4,2] //false
     result=ass(arr)
     print(result)
 
