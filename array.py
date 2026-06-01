@@ -169,6 +169,19 @@ if __name__=="__main__":
     brr=[1,2,3,4,5]
     result=equals(arr,brr)
     print(result)
-    
+
+####################################################################
+#check wheather the array is sorted in assending order or not
+
+def ass(arr):
+    for i in range(0,len(arr)-1):
+        if arr[i]>arr[i+1]:
+            return False
+    return True
+
+if __name__=="__main__":
+    arr=[1,2,3,4,5]
+    result=ass(arr)
+    print(result)
 
 
