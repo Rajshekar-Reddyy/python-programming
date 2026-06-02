@@ -184,4 +184,13 @@ if __name__=="__main__":
     result=ass(arr)
     print(result)
 
+#################################################################################
+#sub array
+
+if __name__=="__main__":
+    arr=[2,3,4,5,9]
+    for i in range(0,len(arr)):
+        for j in range(i,len(arr)):
+            print(arr[i:j+1])
+
 
