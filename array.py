@@ -195,4 +195,15 @@ if __name__=="__main__":
         for j in range(i,len(arr)):
             print(arr[i:j+1])
 
+################################
+#without slicing
+
+if __name__ == "__main__":
+    arr = [2, 3, 4, 5, 9]
+    for i in range(0, len(arr)):
+        for j in range(i, len(arr)):
+            for k in range(i,j+1):
+                print(arr[k],end=" ")
+            print()
+
 
