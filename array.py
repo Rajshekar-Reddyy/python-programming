@@ -206,4 +206,19 @@ if __name__ == "__main__":
                 print(arr[k],end=" ")
             print()
 
+####################################################################################
+# write a pgm to find the maximum sum of subarray
+if __name__=="__main__":
+    arr=[12,23,12,34,1,2,3]
+    max=arr[0]
+    for i in range(0,len(arr)):
+        for j in range(i,len(arr)):
+            sum=0
+            for k in range(i,j+1):
+                sum+=arr[k]
+            if sum>max:
+                max=sum
+    print(max)
+                
+
 
