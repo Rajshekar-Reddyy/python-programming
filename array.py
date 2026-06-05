@@ -220,6 +220,19 @@ if __name__=="__main__":
                 max=sum
     print(max)
 #########################################################################################
+# write a pgm to count all the subarrays whose sum is zero
+if __name__ == "__main__":
+    arr=[2,0,-2,5,-5]
+    count=0
+    for i in range(0, len(arr)):
+        for j in range(i, len(arr)):
+            sum = 0
+            for k in range(i, j + 1):
+                sum += arr[k]
+            if sum ==0:
+                count+=1
+
+    print(count)
 
                 
 
