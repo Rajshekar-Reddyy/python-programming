@@ -234,6 +234,18 @@ if __name__ == "__main__":
 
     print(count)
 
+##################################################3
+# write a pgm to print all the subarrays whose sum is zero
+if __name__ == "__main__":
+    arr=[2,0,-2,5,-5]
+    for i in range(0, len(arr)):
+        for j in range(i, len(arr)):
+            sum = 0
+            for k in range(i, j + 1):
+                sum += arr[k]
+            if sum ==0:
+                print(arr[i:j+1])
+
                 
 
 
