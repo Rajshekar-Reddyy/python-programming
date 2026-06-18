@@ -249,7 +249,7 @@ if __name__ == "__main__":
 #######################################################
 #1write a pgm to count all the subarrays whose sum should be equals to zero and subarray length equals to 2
 if __name__=="__main__":
-    arr=[5,-5,0,-2,2]
+    arr=[5,-5,0,-2,2,0]
     count=0
     for i in range(0,len(arr)):
         for j in range (i,len(arr)):
