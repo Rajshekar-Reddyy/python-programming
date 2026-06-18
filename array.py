@@ -246,6 +246,22 @@ if __name__ == "__main__":
             if sum ==0:
                 print(arr[i:j+1])
 
+#######################################################
+#1write a pgm to count all the subarrays whose sum should be equals to zero and subarray length equals to 2
+if __name__=="__main__":
+    arr=[5,-5,0,-2,2]
+    count=0
+    for i in range(0,len(arr)):
+        for j in range (i,len(arr)):
+            sum=0
+            le = 0
+            for k in range(i,j+1):
+                sum+=arr[k]
+                count+=1
+                le+=1
+            if sum==0 and le==2:
+                print(arr[i:j+1])
+
                 
 
 
