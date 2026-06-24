@@ -280,6 +280,24 @@ if __name__=="__main__":
             if sum==m and le==n:
                 print(arr[i:j+1])
 
+##################################################3
+# write a pgm to find the maximum sum of subarray
+if __name__=="__main__":
+    arr=[2,-2,0,-5,5]
+    max=arr[0]
+    k1=2
+    count=0
+    for i in range(0,len(arr)):
+        for j in range(i,len(arr)):
+            sum=0
+            for k in range(i,j+1):
+                sum+=arr[k]
+                count+=1
+            if sum>max and count==k1:
+                max = sum
+    print(max)
+
+
                 
 
 
