@@ -297,6 +297,19 @@ if __name__=="__main__":
                 max = sum
     print(max)
 
+#######################################################
+#write a pgm to find the frequency of numbers in n array
+arr=[12,23,34,34,12,34,45,15]
+dict={}
+for key in arr:
+    if key in dict:
+        dict[key]+=1
+    else:
+        dict[key]=1
+print(dict)
+for key in dict:
+    print(key,dict[key])
+
 
                 
 
