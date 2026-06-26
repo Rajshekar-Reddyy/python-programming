@@ -310,6 +310,20 @@ print(dict)
 for key in dict:
     print(key,dict[key])
 
+#########################################################
+arr=[12,34,45,34,12,18]
+res=[]
+dict={}
+for key in arr:
+    if key in dict:
+        dict[key]+=1
+    else:
+        dict[key]=1
+for i in  dict:
+    if dict[key]==1:
+        res.append(key)
+print(res)
+
 
                 
 
