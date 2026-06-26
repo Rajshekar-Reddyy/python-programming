@@ -311,6 +311,7 @@ for key in dict:
     print(key,dict[key])
 
 #########################################################
+#implement unique elements from an array
 arr=[12,34,45,34,12,18]
 res=[]
 dict={}
