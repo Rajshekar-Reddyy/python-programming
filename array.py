@@ -326,9 +326,7 @@ for i in  dict:
 print(res)
 
 #########################################################
-"""
-find the friquency of the numbers
-"""
+#find the frequency of the numbers
 if __name__ == '_main_':
     arr = [12,23,34,34,12,34,45,15]
     dict = {}
