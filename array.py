@@ -338,7 +338,23 @@ if __name__ == '_main_':
     print(dict)
     for key in dict:
         print(key,dict[key])
+####################################################
+"""
+write a pgm to remove dublicates from given array
+"""
+if __name__ == '_main_':
+    arr = [12, 23, 34, 34, 12, 34, 45, 15]
+    res = []
+    dict = {}
+    for key in arr:
+        if key in dict:
+            dict[key]+=1
+        else:
+            dict[key]=1
 
+    for key in dict:
+        res.append(key)
+    print(res)
 
                 
 
