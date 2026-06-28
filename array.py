@@ -356,6 +356,16 @@ if __name__ == '_main_':
         res.append(key)
     print(res)
 
+# # or
+#
+if __name__ == '_main_':
+    arr = [12, 23, 34, 34, 12, 34, 45, 15]
+    res = []
+    for ele in arr:
+        if ele not in res:
+            res.append(ele)
+    print(res)
+
                 
 
 
