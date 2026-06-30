@@ -365,7 +365,24 @@ if __name__ == '_main_':
         if ele not in res:
             res.append(ele)
     print(res)
+###################################################################33
+"""
+w a pgm print non dublicates in given array
+"""
+if __name__ == '_main_':
+    arr = [12, 23, 34, 34, 12, 34, 45, 15]
+    res = []
+    dict = {}
+    for key in arr:
+        if key in dict:
+            dict[key]+=1
+        else:
+            dict[key]=1
 
+    for key in dict:
+        if dict[key] == 1:
+            res.append(key)
+    print(res)
                 
 
 
