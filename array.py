@@ -383,6 +383,28 @@ if __name__ == '_main_':
         if dict[key] == 1:
             res.append(key)
     print(res)
+
+######################################################################
+"""
+w a pgm to print the element which occured maximum no of times
+"""
+if __name__ == '_main_':
+    arr = [12, 23, 34, 34, 12, 34, 45, 15]
+    res = []
+    maxi = 0
+    max_ele = -1
+    dict = {}
+    for key in arr:
+        if key in dict:
+            dict[key]+=1
+        else:
+            dict[key]=1
+
+    for key in dict:
+        if dict[key] > maxi:
+            maxi = dict[key]
+            max_ele = key
+    print(max_ele)
                 
 
 
