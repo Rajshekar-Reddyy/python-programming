@@ -405,6 +405,24 @@ if __name__ == '_main_':
             maxi = dict[key]
             max_ele = key
     print(max_ele)
+
+########################################################################33
+# sales by match (hakerrank)
+#pseudo code: 1.make dict of key and value
+              #2.sum+=
+if __name__=="__main__":
+    arr=[10, 20, 20, 10, 10, 30, 50, 10, 20]
+    dict={}
+    sum=0
+    for key in arr:
+        if key in dict:
+            dict[key]+=1
+        else:
+            dict[key]=1
+
+    for key in dict:
+        sum+=dict[key]//2
+    print(sum)
                 
 
 
