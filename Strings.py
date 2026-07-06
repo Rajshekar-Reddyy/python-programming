@@ -16,7 +16,7 @@ if __name__=='__main__':
     print(res)
 print("__"*100)
 ####################################################################################################################
-
+#write a pgm to check the srting is palindrome or not
 if __name__=='__main__':
     s="malayalam"
     res=""
