@@ -16,3 +16,15 @@ if __name__=='__main__':
     print(res)
 print("__"*100)
 ####################################################################################################################
+
+if __name__=='__main__':
+    s="malayalam"
+    res=""
+    for i in range(0,len(s)):
+        res= s[i]+res
+    if s==res:
+        print("palindrome")
+    else:
+        print("not a palindrome")
+
+print("__"*100)
