@@ -25,4 +25,17 @@ if __name__=='__main__':
         print("palindrome")
     else:
         print("not a palindrome")
-#######################################################################################################################3
+#######################################################################################################################
+#convert lowercase str to uppercase str
+def upper1(s):
+    res=""
+    for ch in s:
+        if ord(ch)>=97 and ord(ch)<=122:
+            res+=chr(ord(ch)-32)
+        else:
+            res+=ch
+    return res
+if __name__=='__main__':
+    s="HelLo"
+    res=upper1(s)
+    print(res)
