@@ -42,3 +42,15 @@ if __name__=='__main__':
 
 #############################################################################################################################
 #convert uppercase str to lowercase str
+def lower1(s):
+    res=""
+    for ch in s:
+        if ord(ch)>=65 and ord(ch)<=90:
+            res+=chr(ord(ch)+32)
+        else:
+            res+=ch
+    return res
+if __name__=='__main__':
+    s="HelLo"
+    res=lower1(s)
+    print(res)
