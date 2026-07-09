@@ -54,3 +54,19 @@ if __name__=='__main__':
     s="HelLo"
     res=lower1(s)
     print(res)
+
+########################################################################################################################
+#Swapping th uppercase into lower case and lower into uppercase
+def swap1(s):
+    res=""
+    for ch in s:
+        if ord(ch)>=65 and ord(ch)<=90:
+            res+=chr(ord(ch)+32)
+        elif ord(ch) >= 97 and ord(ch) <= 122:
+            res+=chr(ord(ch)-32)
+
+    return res
+if __name__=='__main__':
+    s="HelLo"
+    res=swap1(s)
+    print(res)
