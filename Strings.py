@@ -70,3 +70,5 @@ if __name__=='__main__':
     s="HelLo"
     res=swap1(s)
     print(res)
+
+###############
