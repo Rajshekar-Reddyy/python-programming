@@ -71,4 +71,12 @@ if __name__=='__main__':
     res=swap1(s)
     print(res)
 
-###############
+##############################################################################################################################
+#pgm to check the count of vowel in a string
+if __name__=='__main__':
+    s="lalith kumar soni ravikumar"
+    count=0
+    for ch in s:
+        if ch in "aeiouAEIOU":
+            count+=1
+    print(count)
