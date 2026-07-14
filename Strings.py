@@ -82,6 +82,7 @@ if __name__=='__main__':
     print(count)
 
 ################################################################################
+# pgm to count vowels, consonants, and spaces in a string
 if __name__=='__main__':
     s="Dhee coding lab"
     countvowels=0
