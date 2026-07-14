@@ -80,3 +80,20 @@ if __name__=='__main__':
         if ch in "aeiouAEIOU":
             count+=1
     print(count)
+
+################################################################################
+if __name__=='__main__':
+    s="Dhee coding lab"
+    countvowels=0
+    countconsonents=0
+    countspaces=0
+    for ch in s:
+        if ch in "aeiouAEIOU":
+            countvowels+=1
+        elif ch==" ":
+            countspaces+=1
+        else:
+            countconsonents+=1
+    print(countspaces)
+    print(countconsonents)
+    print(countspaces)
