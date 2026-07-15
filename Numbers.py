@@ -161,7 +161,7 @@ def count_digits(num):
     return digit
 
 if __name__=="__main__":
-    num=1254
+    num=3525
     result=count_digits(num)
     print(result)
 
