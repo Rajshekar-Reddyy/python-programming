@@ -98,3 +98,10 @@ if __name__=='__main__':
     print(countspaces)
     print(countconsonents)
     print(countspaces)
+
+##############################################################################
+# pgm to split a given string where # is given.
+if __name__=='__main__':
+    s="zeus#your#son#has#returned"
+    arr=s.split("#")
+    print(arr)
