@@ -105,3 +105,14 @@ if __name__=='__main__':
     s="zeus#your#son#has#returned"
     arr=s.split("#")
     print(arr)
+
+#############################################################################
+def rev(s):
+    res=""
+    for ch in s:
+        res=ch+res
+    return res
+if __name__=='__main__':
+    s="dhee coding lab"
+    res=rev(s)
+    print(res)
