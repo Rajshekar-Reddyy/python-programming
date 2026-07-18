@@ -117,3 +117,18 @@ if __name__=='__main__':
     s="dhee coding lab"
     res=rev(s)
     print(res)
+
+################################################################################################
+#pgm to implement word reversal and capitalization
+def rev(s):
+    res=""
+    for i in range(0,len(s)):
+        res=s[i]+res
+    return res
+if __name__=='__main__':
+    s="lalith soni ravi kumar"
+    res=""
+    arr=s.split(" ")
+    for i in range(len(arr)):
+        res+=rev(arr[i].upper())+" "
+    print(res)
