@@ -132,3 +132,19 @@ if __name__=='__main__':
     for i in range(len(arr)):
         res+=rev(arr[i].upper())+" "
     print(res)
+
+###########################################################################################
+#Implement string reversal function
+def rev(s):
+    res=""
+    for i in range(0,len(s)):
+        res=s[i]+res
+    return res
+if __name__=='__main__':
+    s="rebal ante star aa raa"
+    res=""
+    arr=s.split(" ")
+    for i in range(len(arr)-1,-1,-1):
+        res+=arr[i] + " "
+    print(res)
+print("__"*100)
