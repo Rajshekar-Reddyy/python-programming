@@ -166,3 +166,20 @@ if __name__=='__main__':
     for word in arr:
         res+=first_letter_upper(word)+" "
     print(res)
+
+###########################################################################################################
+def first_letter_upper(s):
+    res=""
+    for i in range(0,len(s)):
+        if i==0:
+            res =chr(ord(s[i])-32) + res
+        else:
+            res =s[i] +res
+    return res
+if __name__=='__main__':
+    s="dhee coding lab"
+    res=""
+    arr=s.split(" ")
+    for word in arr:
+        res+=first_letter_upper(word)+" "
+    print(res)
