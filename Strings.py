@@ -201,3 +201,14 @@ if __name__=='__main__':
     for word in arr:
         res+=first_letter_upper(word)+" "
     print(res)
+################################################################################################################
+
+# write a pgm to print all the substrings from the given string
+if __name__=="__main__":
+    s="hello"
+    for i in range(0,len(s)):
+        for j in range(i,len(s)):
+            res=""
+            for k in range(i,j+1):
+                res+=s[k]
+            print(res)
