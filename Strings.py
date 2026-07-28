@@ -212,3 +212,14 @@ if __name__=="__main__":
             for k in range(i,j+1):
                 res+=s[k]
             print(res)
+
+############################################################################################################
+#Count the frequency of each character
+if __name__ == "__main__":
+    s = "programming"
+
+    for ch in s:
+        if s.count(ch) == 1:
+            print(ch, "=", 1)
+        elif ch == s[s.index(ch)]:
+            print(ch, "=", s.count(ch))
