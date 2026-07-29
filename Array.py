@@ -423,6 +423,21 @@ if __name__=="__main__":
     for key in dict:
         sum+=dict[key]//2
     print(sum)
+
+############################################################################
+#Write a program to merge two arrays
+arr1 = [10, 20, 30]
+arr2 = [40, 50, 60]
+
+res = []
+
+for i in arr1:
+    res.append(i)
+
+for j in arr2:
+    res.append(j)
+
+print("Merged Array:", res)
                 
 
 
