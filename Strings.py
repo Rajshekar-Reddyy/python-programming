@@ -223,3 +223,14 @@ if __name__ == "__main__":
             print(ch, "=", 1)
         elif ch == s[s.index(ch)]:
             print(ch, "=", s.count(ch))
+
+######################################################################################################
+# Check Anagram
+if __name__ == "__main__":
+    s1 = "listen"
+    s2 = "silent"
+
+    if sorted(s1) == sorted(s2):
+        print("Anagram")
+    else:
+        print("Not Anagram")
