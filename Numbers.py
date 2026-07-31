@@ -404,6 +404,18 @@ else:
     print(num, "is not a Spy Number")
 
 
+# pgm to find sunny number
+import math
+
+num = int(input("Enter a number: "))
+
+root = int(math.sqrt(num + 1))
+
+if root * root == num + 1:
+    print(num, "is a Sunny Number")
+else:
+    print(num, "is not a Sunny Number")
+
 
 
 
