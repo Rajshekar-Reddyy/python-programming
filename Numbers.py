@@ -385,6 +385,24 @@ if __name__=='main_':
     else:
         print("not automorphic")
 
+#spy number
+num = int(input("Enter a number: "))
+
+temp = num
+sum_digits = 0
+product = 1
+
+while temp > 0:
+    digit = temp % 10
+    sum_digits += digit
+    product *= digit
+    temp //= 10
+
+if sum_digits == product:
+    print(num, "is a Spy Number")
+else:
+    print(num, "is not a Spy Number")
+
 
 
 
