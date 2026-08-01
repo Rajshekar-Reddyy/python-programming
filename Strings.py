@@ -234,3 +234,21 @@ if __name__ == "__main__":
         print("Anagram")
     else:
         print("Not Anagram")
+
+#########################################################################################################
+# Reverse a string using the two-pointer method
+
+s = input("Enter a string: ")
+
+chars = list(s)
+left = 0
+right = len(chars) - 1
+
+while left < right:
+    chars[left], chars[right] = chars[right], chars[left]
+    left += 1
+    right -= 1
+
+reversed_string = "".join(chars)
+
+print("Reversed String:", reversed_string)
