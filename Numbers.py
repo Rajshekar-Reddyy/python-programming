@@ -416,6 +416,16 @@ if root * root == num + 1:
 else:
     print(num, "is not a Sunny Number")
 
+#Fibonacci Series 
+def fibonacci(n):
+    a, b = 0, 1
+
+    for _ in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+
+fibonacci(10)
+
 
 
 
