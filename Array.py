@@ -438,6 +438,21 @@ for j in arr2:
     res.append(j)
 
 print("Merged Array:", res)
+
+###############################################################################3
+#1. Write a program to find the Second Largest Element in an Array
+arr = [12, 45, 23, 67, 89, 67, 34]
+
+largest = second = float('-inf')
+
+for x in arr:
+    if x > largest:
+        second = largest
+        largest = x
+    elif x > second and x != largest:
+        second = x
+
+print("Second Largest:", second)
                 
 
 
