@@ -440,7 +440,7 @@ for j in arr2:
 print("Merged Array:", res)
 
 ###############################################################################3
-#1. Write a program to find the Second Largest Element in an Array
+# Write a program to find the Second Largest Element in an Array
 arr = [12, 45, 23, 67, 89, 67, 34]
 
 largest = second = float('-inf')
@@ -453,6 +453,23 @@ for x in arr:
         second = x
 
 print("Second Largest:", second)
+
+####################################################################################
+# Write a program to check whether two arrays are Anagrams.
+
+arr1 = [1, 2, 3, 4, 5]
+arr2 = [5, 4, 3, 2, 1]
+
+if len(arr1) != len(arr2):
+    print("Not Anagrams")
+else:
+    arr1.sort()
+    arr2.sort()
+
+    if arr1 == arr2:
+        print("Anagrams")
+    else:
+        print("Not Anagrams")
                 
 
 
