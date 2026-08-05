@@ -276,3 +276,15 @@ def is_anagram(s, t):
 
 print(is_anagram("listen", "silent"))
 print(is_anagram("hello", "world"))   
+
+#########################################################################################################
+#Find First Non-Repeated Character
+
+s = input("Enter a string: ")
+
+for ch in s:
+    if s.count(ch) == 1:
+        print("First non-repeated character:", ch)
+        break
+else:
+    print("No unique character found")
