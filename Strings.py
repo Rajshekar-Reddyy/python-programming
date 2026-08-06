@@ -280,7 +280,7 @@ print(is_anagram("hello", "world"))
 #########################################################################################################
 #Find First Non-Repeated Character
 
-s = input("Enter a string: ")
+s = "ramakrishna"
 
 for ch in s:
     if s.count(ch) == 1:
