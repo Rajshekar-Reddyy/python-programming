@@ -471,6 +471,35 @@ else:
         print("Anagrams")
     else:
         print("Not Anagrams")
+
+##########################################################################################3
+#Find the length of the longest contiguous subarray containing an equal number of even and odd elements.
+
+def longest_balanced(nums):
+    first_index = {0: -1}
+    balance = 0
+    max_length = 0
+
+    for i, num in enumerate(nums):
+        # Even = +1, Odd = -1
+        if num % 2 == 0:
+            balance += 1
+        else:
+            balance -= 1
+
+        # Same balance means equal evens and odds
+        if balance in first_index:
+            length = i - first_index[balance]
+            max_length = max(max_length, length)
+        else:
+            first_index[balance] = i
+
+    return max_length
+
+
+nums = [2, 4, 7, 9, 6, 8, 3]
+
+print(longest_balanced(nums))
                 
 
 
