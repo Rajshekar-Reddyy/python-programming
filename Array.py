@@ -500,6 +500,19 @@ def longest_balanced(nums):
 nums = [2, 4, 7, 9, 6, 8, 3]
 
 print(longest_balanced(nums))
+
+#two sum problem
+
+def twoSum(nums, target):
+    seen = {}
+
+    for i, num in enumerate(nums):
+        complement = target - num
+
+        if complement in seen:
+            return [seen[complement], i]
+
+        seen[num] = i
                 
 
 
