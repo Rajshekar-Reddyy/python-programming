@@ -288,3 +288,7 @@ for ch in s:
         break
 else:
     print("No unique character found")
+
+##########################################################################################################
+#Find the first character that occurs only once
+
