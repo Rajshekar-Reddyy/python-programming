@@ -304,3 +304,9 @@ else:
 ############################################################################################################3
 # Write a Python program to print all unique characters in a string.
 
+s = input("Enter a string: ")
+
+for ch in s:
+    if s.count(ch) == 1:
+        print(ch, end=" ")
+
