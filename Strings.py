@@ -301,3 +301,6 @@ for char in text:
 else:
     print("No non-repeating character found")
 
+############################################################################################################3
+# Write a Python program to print all unique characters in a string.
+
