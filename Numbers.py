@@ -438,6 +438,21 @@ for i in range(2, n + 1):
 ####################################################################
 #Write a Python program to find all the factors of a given number and print only the factors that are prime numbers.
 
+n = int(input("Enter a number: "))
+
+print("Prime factors are:")
+
+for i in range(1, n + 1):
+    if n % i == 0:          # Check whether i is a factor
+        count = 0
+
+        for j in range(1, i + 1):
+            if i % j == 0:
+                count += 1
+
+        if count == 2:      # Prime number has exactly 2 factors
+            print(i)
+
 
 
 
