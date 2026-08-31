@@ -453,6 +453,22 @@ def factorprime(n):
 if __name__=="__main__":
     n = int(input("Enter a number: "))
     factorprime(n)
+
+################################################
+# WRITE A PGM TO WRITE YHE FACTORS OF A NUMBER
+    n=int(input("enter a no to find factors"))
+    for i in range(1,n+1):
+        if n%i==0:
+            print(i)
+
+def factor(n):
+    for i in range(1,n+1):
+        if n%i==0:
+            print(i)
+
+if __name__=="__main__":
+    n=12
+    factor(n)
     
 
 
