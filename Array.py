@@ -513,6 +513,19 @@ def twoSum(nums, target):
             return [seen[complement], i]
 
         seen[num] = i
+
+#################################################################################33
+## Write a program to find the sum of all even elements in an array
+
+arr = [10, 15, 20, 25, 30, 35]
+
+sum = 0
+
+for i in arr:
+    if i % 2 == 0:
+        sum += i
+
+print("Sum of even elements:", sum)
                 
 
 
