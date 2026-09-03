@@ -67,5 +67,34 @@ if __name__=="__main__":
     quick_sort(arr,0,len(arr)-1)
     print(arr)
 
+################################################################################################################################
+# Valid Palindrome
+
+class Solution(object):
+    def isPalindrome(self, s):
+        s=s.lower()
+        left=0
+        right=len(s)-1
+        while left <= right:
+            ch1=s[left]
+            ch2=s[right]
+            if not ch1.isalnum():
+                left+=1
+                continue 
+            if not ch2.isalnum():
+                right-=1
+                continue
+            if ch1!=ch2:
+                return False
+            left+=1
+            right-=1
+        return True
+
+        
+
+
+        
+            
+
 
 
